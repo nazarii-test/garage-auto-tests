@@ -1,8 +1,8 @@
 name: Playwright Tests (VM)
 
-on:
-  push:
-    branches: [main, github-actions]
+# on:
+#   push:
+#    branches: [main, github-actions]
 
 jobs:
   test:
