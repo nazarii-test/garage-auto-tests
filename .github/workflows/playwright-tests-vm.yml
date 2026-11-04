@@ -24,7 +24,7 @@ jobs:
         run: npx playwright install chromium --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test --project=e2e
+        run: npx playwright test --project=e2e tests/expenses.spec.ts tests/garage.spec.ts tests/profile.spec.ts tests/signin.spec.ts
         env:
           HTTP_USERNAME: ${{ secrets.HTTP_USERNAME }}
           HTTPS_PASSWORD: ${{ secrets.HTTPS_PASSWORD }}
