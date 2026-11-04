@@ -25,6 +25,9 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test --project=e2e
+        env:
+          HTTP_USERNAME: ${{ secrets.HTTP_USERNAME }}
+          HTTPS_PASSWORD: ${{ secrets.HTTPS_PASSWORD }}
 
       - name: Upload Playwright HTML report
         uses: actions/upload-artifact@v4
