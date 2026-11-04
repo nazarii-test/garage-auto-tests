@@ -1,8 +1,7 @@
 name: Playwright Tests (Playwright Docker image)
 
-# on:
-#   push:
-#    branches: [main, github-actions]
+on:
+  workflow_dispatch:
 
 jobs:
   test:

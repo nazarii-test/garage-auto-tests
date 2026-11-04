@@ -1,8 +1,7 @@
 name: Playwright Tests (Github Pages)
 
 on:
-  push:
-    branches: [main, github-actions]
+  workflow_dispatch:
 
 jobs:
   test:
